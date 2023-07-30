@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Travel Tales</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+       
+    </head>
+    <body>
+        <header>
+        <a href="" class="brand">Travel Tales</a>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>  
+        </div>
+        <div class="navigation">
+            <div class="navigation-items" >
+                <a href="home.html" >Home</a>
+                <a href="about.html" >About</a>
+                <a href="package.html">Packages</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="contact.html" class="active">Contact</a>
+                <div class="close">
+                <a href="" ><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+        </header>
+        <section class="home-contact">
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Subscribe to know more about seasonal <br> packages and discount !!</p>
+            </div>
+            <div class="send">
+                <form>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.7749001161!2d77.30125091766533!3d12.954459545828376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1690005500249!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                        <h5>No 34 East Garden Valley</h5>
+                        <p>Bengaluru</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <h5>+0123456789</h5>
+                        <p>Customer Support team</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@traveltales.com</h5>
+                        <p>Feel free to mail your queries</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col-form">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your mail id" required>
+                    <input type="text" placeholder="Enter your contact number" required>
+                    <textarea rows="8" placeholder="Enter your message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer">
+                <div class="main">
+                    <div class="list">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a  href="about.html">About Us</a></li>
+                            <li><a  href="contact.html">Contact Us</a></li>
+                            <li><a  href="package.html">Our Packges</a></li>
+                            <li><a  href="bookings.html">Services</a></li>
+                            <li><a  href="#">Privacy Policy</a></li>
+                            <li><a  href="#">Terms & Conditions</a></li>     
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a  href="#">Cancellation</a></li>
+                            <li><a  href="#">Payments</a></li>
+                            <li><a  href="#">Advertising</a></li>
+                            <li><a  href="#">Branding</a></li>
+                            <li><a  href="#">FAQs</a></li>
+                            <li><a  href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Reach Us</h4>
+                        <ul>
+                            <li><a href="#">No 34 East Garden Valley</a></li>
+                            <li><a href="#">Bengaluru</a></li>
+                            <li><a href="#">+0123456789</a></li>
+                            <li><a href="#">+444888822</a></li>
+                            <li><a href="#">info@traveltales.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Follow Us On</h4>
+                        <div class="social">
+                            <a  href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a  href="#"><i class="fab fa-instagram"></i></a>
+                            <a  href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyryt">
+                <p>Copyright ©2023 All rights reserved | Travel Tales</p>
+            </div>
+        </section>
+
+        
+
+
+        <script type="text/javascript">
+            const menuBtn=document.querySelector(".menu-btn");
+            const navigation=document.querySelector(".navigation");
+            const closetag=document.querySelector(".close")
+            menuBtn.addEventListener("click",()=> {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+                closetag.classList.toggle("active");
+          });
+        </script>
+    </body>
+</html>
